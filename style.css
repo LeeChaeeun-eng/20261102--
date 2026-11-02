@@ -1,0 +1,91 @@
+/* 기본 설정 */
+:root{--paper:#f8f4ef;--ink:#39342f;--muted:#8e8379;--line:#d8cec4;--rose:#e9a99b}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#eee8e1;color:var(--ink);font-family:"Gowun Batang","Nanum Myeongjo",serif;font-weight:400}
+button,a{-webkit-tap-highlight-color:transparent}
+button{font:inherit}
+.topbar{height:58px;max-width:720px;margin:0 auto;padding:0 22px;display:flex;align-items:center;justify-content:space-between;background:var(--paper);position:sticky;top:0;z-index:10;border-bottom:1px solid rgba(120,100,80,.08)}
+.brand{font-family:Montserrat,sans-serif;letter-spacing:2px;font-size:13px;text-decoration:none;color:var(--ink)}
+.brand span,.heart-btn{color:var(--rose)}
+.topbar nav{display:flex;gap:18px}
+.topbar nav a{font:9px Montserrat,sans-serif;letter-spacing:1.1px;color:#82776d;text-decoration:none}
+.heart-btn{border:0;background:none;font-size:23px;padding:4px}
+main{max-width:720px;margin:0 auto;background:var(--paper);overflow:hidden;box-shadow:0 0 40px #d9d0c7}
+.section-wrap{padding:48px 7.5%}
+.hero{padding-top:56px;text-align:center;background:linear-gradient(180deg,#fbf6f1,#f8f4ef)}
+.hero-copy{padding-bottom:26px}
+.eyebrow{font:10px Montserrat,sans-serif;letter-spacing:2px;color:#9b8e82;margin:0 0 16px}
+h1{font-size:clamp(25px,6vw,34px);font-weight:400;letter-spacing:5px;margin:0 0 22px}
+h1 span{color:var(--rose);font-size:19px;vertical-align:middle;margin:0 8px}
+.intro,.section-heading>p:last-child{font-size:13px;line-height:2;color:#82786f}
+.date-line{font:13px Montserrat,sans-serif;letter-spacing:3px;margin:23px 0 10px}
+.date-line span{font-size:8px;letter-spacing:1.5px;color:#a69a90;margin-left:6px}
+.scroll-cue{display:inline-block;color:#a89c91;text-decoration:none;font-size:22px;margin-top:6px}
+.photo-button{display:block;border:0;padding:0;background:none;overflow:hidden;width:100%;cursor:zoom-in}
+.photo-button img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.photo-button:active img{transform:scale(1.02)}
+.hero-photo{height:clamp(280px,78vw,490px)}
+.story{padding-top:60px}
+.section-heading{text-align:center;margin-bottom:28px}
+.section-heading h2{font-size:25px;font-weight:400;letter-spacing:2px;margin:0 0 12px}
+.story-images{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.story-images .photo-button{height:210px}
+.timeline{display:flex;align-items:center;justify-content:space-between;margin:22px 0 34px;color:#83796f}
+.timeline div{display:flex;flex-direction:column;gap:6px}
+.timeline strong{font:11px Montserrat,sans-serif;letter-spacing:1px;font-weight:400}
+.timeline span{font-size:10px}
+.timeline i{height:1px;flex:1;background:var(--line);margin:0 8px}
+.script-note{font-family:"Nanum Myeongjo",serif;font-style:italic;font-size:32px;line-height:1.4;color:#8e7b68;margin:0;text-align:right;padding-right:12px}
+.gallery{padding-top:42px}
+.gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.gallery-grid .photo-button{height:170px}
+.gallery-grid .wide{grid-column:span 2;height:clamp(175px,52vw,300px)}
+.gallery blockquote{text-align:center;font-size:17px;line-height:2.1;color:#7d7268;margin:42px 0 12px}
+.gallery-caption{text-align:center;font-size:11px;color:#a1958b}
+.wedding{padding-top:48px}
+.wedding .section-heading{margin-bottom:24px}
+.ornament{color:#b8aa9c}
+.info-list{padding:8px 4px 22px}
+.info-row{display:flex;gap:18px;margin:16px 0;align-items:flex-start}
+.info-icon{font-size:22px;width:28px;text-align:center;color:#6e665f}
+.info-row strong{font-size:13px;font-weight:400}
+.info-row p{font-size:12px;line-height:1.9;color:#81776e;margin:5px 0 0}
+.venue-photo{height:clamp(170px,48vw,270px)}
+.map-section{text-align:center;padding:35px 4px 10px}
+.map-section h3{font-size:21px;font-weight:400;letter-spacing:2px;margin:0 0 20px}
+.map-card{height:190px;position:relative;overflow:hidden;background-color:#e9e8e2;background-image:linear-gradient(28deg,transparent 47%,#fff 48%,#fff 51%,transparent 52%),linear-gradient(115deg,transparent 43%,#fff 44%,#fff 47%,transparent 48%),linear-gradient(0deg,transparent 72%,#d9d6ce 73%,#d9d6ce 74%,transparent 75%);background-size:110px 100px,130px 120px,100% 100%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:7px}
+.map-lines{position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 45px,rgba(190,186,176,.35) 46px 48px),repeating-linear-gradient(0deg,transparent 0 39px,rgba(190,186,176,.3) 40px 42px)}
+.map-pin{z-index:1;color:#d65d4f;font-size:30px;text-shadow:0 2px 4px #fff}
+.map-card strong,.map-card small{z-index:1;background:rgba(248,244,239,.8);padding:3px 8px}
+.map-card strong{font-size:12px}.map-card small{font-size:10px;color:#82786f}
+.address{font-size:11px;color:#887e75;margin:15px 0}
+.outline-btn{display:inline-flex;align-items:center;gap:14px;border:1px solid #b9aea4;padding:11px 22px;color:#665d55;text-decoration:none;font-size:11px}
+.account{padding-top:36px}
+.account .section-heading{margin-bottom:20px}
+.account-card{background:#f1ebe5;padding:16px 14px;margin:9px 0;display:flex;align-items:center;justify-content:space-between}
+.account-card>div{display:flex;align-items:center;gap:13px;flex-wrap:wrap}
+.account-card span,.account-card strong{font-size:11px;font-weight:400}
+.account-card p{font:10px/1.7 Montserrat,sans-serif;color:#746a62;margin:0}
+.account-card small{font-family:"Gowun Batang",serif}
+.copy-btn{border:1px solid #b6aaa0;background:transparent;padding:5px 11px;font-size:10px;color:#5e554e;cursor:pointer}
+.closing{padding:30px 0 0;position:relative}
+.closing img{display:block;width:100%;height:clamp(270px,75vw,430px);object-fit:cover}
+.closing-copy{position:absolute;left:9%;top:48px;color:#fff;text-shadow:0 1px 5px #5e5148}
+.closing-copy .script-note{text-align:left;color:#fff;font-size:28px;padding:0}
+.closing-copy span{display:block;font:8px Montserrat,sans-serif;letter-spacing:2px;margin-top:18px}
+footer{text-align:center;padding:25px 10px;background:var(--paper);font:9px Montserrat,sans-serif;letter-spacing:2px;color:#9b8e82}
+footer span{color:var(--rose);padding:0 8px}
+/* 사진 확대 모달 */
+.modal,.toast-modal{position:fixed;inset:0;background:rgba(25,22,20,.86);z-index:30;display:none;align-items:center;justify-content:center;padding:22px}
+.modal.show,.toast-modal.show{display:flex}
+.modal img{max-width:100%;max-height:85vh;object-fit:contain;box-shadow:0 10px 40px #0005}
+.modal-close{position:absolute;top:18px;right:22px;color:white;background:none;border:0;font-size:36px;cursor:pointer}
+.toast-modal{background:rgba(34,29,26,.48);z-index:40}
+.toast-box{width:min(310px,90vw);background:var(--paper);padding:30px 22px;text-align:center;box-shadow:0 15px 50px #0002}
+.toast-heart{display:block;color:var(--rose);font-size:24px;margin-bottom:12px}
+.toast-box strong{font-size:15px;font-weight:400}
+.toast-box p{font-size:11px;color:#92867b;margin:10px 0 20px}
+.toast-box button{border:1px solid #b9aea4;background:transparent;padding:8px 26px;font-size:11px;color:#5e554e}
+@media(min-width:600px){.topbar{height:66px;padding:0 42px}.topbar nav{gap:28px}.section-wrap{padding-left:9%;padding-right:9%}.hero{padding-top:70px}.story-images .photo-button{height:280px}.gallery-grid .photo-button{height:220px}.gallery-grid .wide{height:320px}}
+@media(max-width:360px){.topbar{padding:0 14px}.topbar nav{gap:11px}.topbar nav a{font-size:8px}.account-card>div{gap:7px}.account-card p{font-size:9px}}
